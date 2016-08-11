@@ -5,14 +5,27 @@ $(document).ready(function(){
     var ferris = 24;
     var coaster = 36;
     var slingshot = 48;
-    if(height >= ferris) {
+    if(height >= slingshot) {
+      $("#noRide").hide();
       $("#ferrisWheel").show();
-    }if(height >= coaster) {
       $("#rollerCoaster").show();
-    }if(height >= slingshot) {
       $("#slingShot").show();
-    }else {
+    }else if(height >= coaster) {
+      $("#noRide").hide();
+      $("#ferrisWheel").show();
+      $("#rollerCoaster").show();
+      $("#slingShot").hide();
+    }else if(height >= ferris) {
+      $("#noRide").hide();
+      $("#ferrisWheel").show();
+      $("#rollerCoaster").hide();
+      $("#slingShot").hide();
+    }else{
       $("#noRide").show();
+      $("#ferrisWheel").hide();
+      $("#rollerCoaster").hide();
+      $("#slingShot").hide();
     }
+
   });
 });
