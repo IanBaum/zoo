@@ -1,4 +1,13 @@
 $(document).ready(function(){
+  $("#amusementToggle").click(function(){
+    $(".amusementDiv").show();
+    $(".zooDiv").hide();
+  });
+  $("#zooToggle").click(function(){
+    $(".zooDiv").show();
+    $(".amusementDiv").hide();
+  });
+
   $("#userInfo").submit(function(event) {
     event.preventDefault();
     var height = parseInt($("#userHeight").val());
