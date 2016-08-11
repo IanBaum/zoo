@@ -1,9 +1,12 @@
-#ferrisWheel, #rollerCoaster, #slingShot {
+#ferrisWheel, #rollerCoaster, #slingShot, #turtleDiv, #snakeDiv, #insectDiv {
   height:300px;
   display: none;
 }
 
-#noRide {
+#slingShotImg {
+  height: 300px;
+}
+.amusementDiv, #noRide, .zooDiv {
   display: none;
 
 }

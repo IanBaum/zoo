@@ -26,6 +26,24 @@ $(document).ready(function(){
       $("#rollerCoaster").hide();
       $("#slingShot").hide();
     }
-
+  });
+  $("#zoo").submit(function(event) {
+    event.preventDefault();
+    var animal = parseInt($("#animals").val());
+    if(animal === 1) {
+      $("#turtleDiv").show();
+      $("#snakeDiv").hide();
+      $("#insectDiv").hide();
+    }
+    else if(animal===2) {
+      $("#snakeDiv").show();
+      $("#turtleDiv").hide();
+      $("#insectDiv").hide();
+    }
+    else {
+      $("#insectDiv").show();
+      $("#turtleDiv").hide();
+      $("#snakeDiv").hide();
+    }
   });
 });

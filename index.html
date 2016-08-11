@@ -13,44 +13,89 @@
 
   <body>
     <div class="container">
-      <form id="userInfo">
-        <div class="form-group">
-          <label for="userHeight">Enter your height in inches
-          </label>
-          <input id="userHeight" class="form-control" type="text">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="togglePark" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"> Zoomusement Park</a>
+          </div>
+
         </div>
-        <button type="submit" class="btn btn-primary" type="text">Submit</button>
-      </form>
-      <p id="noRide">You are to short to ride our rides.</p>
-     <div class="row">
-       <div class="col-sm-4" id="ferrisWheel">
-         <div class="thumbnail">
-           <img src="img/ferris.jpg" alt="a photo of a ferris wheel">
-           <div class="caption">
-             <h3>Ferris Wheel</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </nav>
+      <div class="amusementDiv">
+        <form id="userInfo">
+          <div class="form-group">
+            <label for="userHeight">Enter your height in inches
+            </label>
+            <input id="userHeight" class="form-control" type="text">
+          </div>
+          <button type="submit" class="btn btn-primary" type="text">Submit</button>
+        </form>
+        <p id="noRide">You are to short to ride our rides.</p>
+       <div class="row">
+         <div class="col-sm-4" id="ferrisWheel">
+           <div class="thumbnail">
+             <img src="img/ferris.jpg" alt="a photo of a ferris wheel">
+             <div class="caption">
+               <h3>Ferris Wheel</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </div>
            </div>
          </div>
-       </div>
-       <div class="col-sm-4" id="rollerCoaster">
-         <div class="thumbnail">
-           <img src="img/coaster.jpg" alt="a photo of a roller coaster">
-           <div class="caption">
-             <h3>Roller Coaster</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <div class="col-sm-4" id="rollerCoaster">
+           <div class="thumbnail">
+             <img src="img/coaster.jpg" alt="a photo of a roller coaster">
+             <div class="caption">
+               <h3>Roller Coaster</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </div>
            </div>
          </div>
-       </div>
-       <div class="col-sm-4" id="slingShot">
-         <div class="thumbnail">
-           <img src="img/slingshot.jpg" alt="a photo of a slingshot ride">
-           <div class="caption">
-             <h3>Slingshot</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <div class="col-sm-4" id="slingShot">
+           <div class="thumbnail">
+             <img src="img/slingshot.jpg" alt="a photo of a slingshot ride" id="slingShotImg">
+             <div class="caption">
+               <h3>Slingshot</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </div>
            </div>
          </div>
-       </div>
-     </div>
+       </div><!--end of row -->
+     </div><!--end of amusementDiv -->
+    <div class="row">
+      <div class="zooDiv">
+        <div class="col-sm-12">
+          <form id="zoo">
+          <select class="form-control" id="animals">
+            <option selected disabled>Choose here</option>
+            <option value="1">Turtles</option>
+            <option value="2">Snakes</option>
+            <option value="3">Insects</option>
+          </select>
+        <button type="submit" class="btn btn-danger" type="text">Submit</button>
+          </form>
+        </div>
+      </div><!--end of row 2 -->
+      <div class="row">
+        <div class="col-sm-12" id="turtleDiv">
+          <img src="img/turtle.JPG" alt="photo of turtle">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        </div>
+        <div class="col-sm-12" id="snakeDiv">
+          <img src="img/snake.jpg" alt="a photo of a snake">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </div>
+        <div class="col-sm-12" id="insectDiv">
+          <img src="img/insects.jpg" alt="a photo of insects">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div><!--end of row 3 -->
+    </div><!--end zooDiv -->
+
     </div><!-- end container -->
   </body>
 </html>
