@@ -1,0 +1,9 @@
+#ferrisWheel, #rollerCoaster, #slingShot {
+  height:300px;
+  display: none;
+}
+
+#noRide {
+  display: none;
+
+}
